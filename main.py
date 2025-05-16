@@ -37,4 +37,4 @@ async def pdi(interaction:discord.Interaction,num:int) :
 
 
 
-botin.run("MTM2OTAwODk0ODM4ODA0MDc0NA.GF7wET.KJy1SZ1wnmI9wbWZLvW0KUQopyYDPDSiMU17F4")
+botin.run("colocar aqui o id do bot)
