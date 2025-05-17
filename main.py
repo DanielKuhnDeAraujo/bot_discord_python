@@ -35,6 +35,22 @@ async def pdi(interaction:discord.Interaction,num:int) :
     msg= ("O resultado do d"+str(num)+" foi: "+str(randint(1,num)))
     await interaction.response.send_message(msg)
 
+@botin.tree.command(name="ad" , description="X dados com X lados com X bônus")
+@app_commands.describe(  
+    num="Número máximo do dado."
+)
+@app_commands.describe(  
+    bns="Bônus"
+)
+@app_commands.describe(  
+    qtd="Quantidade de dados"
+)
+async def pdi(interaction:discord.Interaction,qtd:int,num:int,bns:int) :
+    msg=""
+    for i in range(0,qtd) :
+        msg += ("O resultado do d"+str(num)+"com bônus de "+str(bns)+" foi: "+str((randint(1,num))+bns)+"\n")
+    await interaction.response.send_message(msg)
+
 
 
 botin.run("colocar aqui o id do bot)
